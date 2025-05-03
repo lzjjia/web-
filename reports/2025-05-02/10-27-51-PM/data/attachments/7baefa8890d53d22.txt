@@ -1,0 +1,1 @@
+[32mINFO    [0m call_fixture_func:test_sample.py:37 I am from failure test

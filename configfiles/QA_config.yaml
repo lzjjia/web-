@@ -1,0 +1,6 @@
+env: QA
+base_url: "https://rahulshettyacademy.com/angularpractice/"
+username: "devuser"
+password: "devpass"
+letcode_url: "https://letcode.in/"
+sauseLab_url: "https://www.saucedemo.com/"

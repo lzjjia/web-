@@ -1,0 +1,4 @@
+[32mINFO    [0m call_fixture_func:test_sample.py:13 Navigate to https://rahulshettyacademy.com/angularpractice/
+[32mINFO    [0m call_fixture_func:test_sample.py:15 Capture the screenshot
+[32mINFO    [0m call_fixture_func:test_sample.py:17 Create object for page
+[32mINFO    [0m call_fixture_func:test_sample.py:19 Login

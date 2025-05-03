@@ -1,0 +1,4 @@
+[32mINFO    [0m call_fixture_func:test_input_fields_fn.py:13 Launching the Browser and Navigating into LetCode.in website
+[32mINFO    [0m call_fixture_func:test_input_fields_fn.py:15 Maximize the browser window
+[32mINFO    [0m call_fixture_func:test_input_fields_fn.py:18 Click on the Tab
+[32mINFO    [0m call_fixture_func:test_input_fields_fn.py:22 Capture the screenshot

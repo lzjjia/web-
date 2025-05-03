@@ -1,0 +1,27 @@
+2025-05-02 22:40:50,263 : INFO : call_fixture_func : Launching the Browser and Navigating into LetCode.in website
+2025-05-02 22:40:52,741 : INFO : call_fixture_func : Maximize the browser window
+2025-05-02 22:40:54,745 : INFO : call_fixture_func : Click on the Tab
+2025-05-02 22:40:54,901 : INFO : call_fixture_func : Capture the screenshot
+2025-05-02 22:40:57,213 : INFO : call_fixture_func : Navigate to https://rahulshettyacademy.com/angularpractice/
+2025-05-02 22:40:57,514 : INFO : call_fixture_func : Capture the screenshot
+2025-05-02 22:40:58,389 : INFO : call_fixture_func : Create object for page
+2025-05-02 22:40:58,389 : INFO : call_fixture_func : Login
+2025-05-02 22:41:02,584 : INFO : call_fixture_func : I am from addition test
+2025-05-02 22:41:06,546 : INFO : call_fixture_func : I am from failure test
+2025-05-02 22:41:10,609 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:11,462 : INFO : call_fixture_func : Create Object for Login Page locator class
+2025-05-02 22:41:11,462 : INFO : call_fixture_func : Enter username
+2025-05-02 22:41:11,607 : INFO : call_fixture_func : Enter password
+2025-05-02 22:41:11,698 : INFO : call_fixture_func : Click on the Login button
+2025-05-02 22:41:16,065 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:16,929 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
+2025-05-02 22:41:21,567 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:22,416 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
+2025-05-02 22:41:27,843 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:28,063 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
+2025-05-02 22:41:33,202 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:34,058 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
+2025-05-02 22:41:43,774 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:44,684 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
+2025-05-02 22:41:49,281 : INFO : call_fixture_func : Navigate to SauseLab Demo Website
+2025-05-02 22:41:50,424 : INFO : call_fixture_func : Pass the username, password to login function to perform the login
