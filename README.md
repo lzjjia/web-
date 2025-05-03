@@ -30,21 +30,21 @@ A modular, scalable, and ready-to-use **Test Automation Framework** built with *
 
 ## 📁 Folder Structure
 
-- `base/`           – Base classes like WebDriver setup, logger
-- `configFiles/`    – Environment-based YAML config files
-- `logs/`           – Stores log files for each test execution
-- `pages/`          – Page Object Model classes
-- `reports/`        – Allure reports saved with timestamps
-- `screenshots/`    – Screenshots captured during execution
-- `testcases/`      – Test scripts organized per module
-- `testdata/`       – Test data (hardcoded or external)
-- `utilities/`      – Helper methods (e.g., screenshot capture, YAML reader)
-- `conftest.py`     – Pytest fixtures and hooks
-- `pytest.ini`      – Pytest configuration file
-- `requirements.txt` – List of dependencies
-- `Runner.py`       – Entry point to run tests
-- `setup.bat`       – Setup script for Windows
-- `README.md`       – Project documentation
+- `base/`          		→ Base class with reusable Selenium actions
+- `configFiles/`   		→ YAML config files for different environments
+- `logs/`          		→ Auto-generated logs with timestamps for each test run
+- `pages/`         		→ Page Object classes for web elements and actions
+- `reports/`       		→ Allure reports organized by date and time
+- `screenshots/`   		→ Auto/manual screenshots stored by date and time
+- `testcases/`     		→ Test scripts grouped by module
+- `testdata/`      		→ Static or external test data
+- `utilities/`     		→ Common utilities and helper functions
+- `conftest.py`    		→ PyTest fixtures and hooks
+- `pytest.ini`     		→ PyTest configuration settings
+- `requirements.txt` 	→ All dependencies required to run the framework
+- `Runner.py`      		→ Main script to trigger test execution
+- `setup.bat`      		→ Setup script for Windows environments
+- `README.md`      		→ Project documentation
 
 ---
 
@@ -74,14 +74,14 @@ pip install -r requirements.txt
 
 # 🧪 Useful Commands
 
-| Command                                | Description                              |
-| -------------------------------------- | ---------------------------------------- |
-| `pytest`                               | Run all test cases                       |
-| `pytest -m smoke`                      | Run only smoke tests                     |
-| `pytest --browser_name=chrome`         | Run with Chrome browser                  |
-| `pytest --env=qa`                      | Load QA environment configs              |
-| `pytest --alluredir=reports/allure-results` | Run tests and store Allure results     |
-| `allure serve reports/allure-results`  | Launch Allure HTML report                |
+| Command                                  | Description                            |
+|------------------------------------------|----------------------------------------|
+| `python Runner.py`                       | Run all test cases                     |
+| `python Runner.py -m smoke`              | Run only test which is marked as smoke |
+| `python Runner.py --browser_name=chrome` | Run with Chrome browser                |
+| `python Runner.py --env=qa`              | Load QA environment configs            |
+| `python Runner.py -k <keyword>`          | Run only test which is keyword match   |
+| `python Runner.py -r "4"`                | Run the test for 4 times               |
 
 ---
 
