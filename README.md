@@ -65,12 +65,6 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
-### 3. Manual Setup (Alternative)
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-```
 
 # 🧪 Useful Commands
 
