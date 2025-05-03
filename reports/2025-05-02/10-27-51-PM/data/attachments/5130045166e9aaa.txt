@@ -1,2 +1,0 @@
-[32mINFO    [0m call_fixture_func:test_sample.py:59 Navigate to SauseLab Demo Website
-[32mINFO    [0m call_fixture_func:test_sample.py:61 Pass the username, password to login function to perform the login

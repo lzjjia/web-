@@ -1,1 +1,0 @@
-[32mINFO    [0m call_fixture_func:test_sample.py:29 I am from addition test

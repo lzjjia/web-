@@ -1,5 +1,0 @@
-[32mINFO    [0m call_fixture_func:test_sample.py:38 Navigate to SauseLab Demo Website
-[32mINFO    [0m call_fixture_func:test_sample.py:40 Create Object for Login Page locator class
-[32mINFO    [0m call_fixture_func:test_sample.py:42 Enter username
-[32mINFO    [0m call_fixture_func:test_sample.py:44 Enter password
-[32mINFO    [0m call_fixture_func:test_sample.py:46 Click on the Login button
