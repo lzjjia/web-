@@ -42,3 +42,6 @@ Thumbs.db
 # 📄 Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+GUIDE.MD
+CREATE_TEST_GUIDE.md
