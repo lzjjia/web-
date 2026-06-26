@@ -11,7 +11,9 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome", help="Browser Selection")
+    #报告存放目录
     parser.addoption("--run_folder", action="store", help="Folder where report/screenshots are stored")
+    #截图存放目录
     parser.addoption("--screenshot_dir", action="store", help="Folder where screenshots are stored")
     parser.addoption("--env", action="store", default="qa", help="Environment to run tests against: dev or qa")
 
