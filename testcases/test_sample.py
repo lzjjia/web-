@@ -19,7 +19,7 @@ class Test_SampleFunctionality(BaseClass):
         logger.info("Login")
         lp.login(getData["name"], getData["email"], getData["password"])
         assert True
-
+    #fixture 1:不是测试用例，给测试用例提供数据，数据驱动测试,给test_samplescript提供数据
     @pytest.fixture(params=SampleScriptTestData.sampleTestData)
     def getData(self, request):
         return request.param
@@ -53,7 +53,7 @@ class Test_SampleFunctionality(BaseClass):
         logger.info("Pass the username, password to login function to perform the login")
         Sauselab.login(self.driver, get_sause_data["username"], get_sause_data["password"])
         capture_screenshot(request)
-
+    #fixture 2：给 test_sauselab_multiple 提供数据
     @pytest.fixture(params=SampleScriptTestData.sauselabData)
     def get_sause_data(self, request):
         return request.param

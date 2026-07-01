@@ -17,25 +17,31 @@ def pytest_addoption(parser):
     parser.addoption("--screenshot_dir", action="store", help="Folder where screenshots are stored")
     parser.addoption("--env", action="store", default="qa", help="Environment to run tests against: dev or qa")
 
+
+#启动浏览器，这是fixture的前置操作，
+# 在baseclass上被用到，后面继承的类，都可以使用这个作为一个前置操作，打开浏览器
 @pytest.fixture()
 def invokeBrowser(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     print(f"Browser name is {browser_name}")
     if browser_name == "chrome":
-        driver = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        options.page_load_strategy = 'eager'
+        driver = webdriver.Chrome(options=options)
     elif browser_name == "firefox":
         driver = webdriver.Firefox()
     elif browser_name == "edge":
         driver = webdriver.Edge()
     else:
         raise ValueError(f"Unsupported browser: {browser_name}")
+    #将浏览器窗口最大化显示
     driver.maximize_window()
     request.cls.driver = driver
     yield
     driver.close()
 
-
+#加载配置yaml配置文件，每个session只需要加载一次即可
 @pytest.fixture(scope="session")
 def load_config(request):
     """Load environment-specific configuration."""
@@ -48,7 +54,7 @@ def load_config(request):
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
     return config
-
+#失败自动截图
 @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 def pytest_runtest_makereport(item, call):
     """Capture screenshot automatically on failure."""
@@ -104,7 +110,7 @@ def configure_logger():
     log_file_name = f"logs/log_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
     logger.log_path = f"logs/{log_file_name}"
     if not logger.handlers:
-        fileHandler = logging.FileHandler(log_file_name)
+        fileHandler = logging.FileHandler(log_file_name, encoding='utf-8')
         formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
         fileHandler.setFormatter(formatter)
         logger.addHandler(fileHandler)

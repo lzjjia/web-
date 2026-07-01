@@ -45,3 +45,7 @@ pip-delete-this-directory.txt
 
 GUIDE.MD
 CREATE_TEST_GUIDE.md
+
+
+.idea/
+__pycache__/
